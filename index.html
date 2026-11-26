@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101010">
+    <meta name="description" content="ANVARS — вкус, который хочется повторить. Заказывайте любимую еду онлайн!">
+    <title>ANVARS — Вкус начинается здесь</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT -->
+    <div class="announcement">
+        <span>✦</span>
+        СВЕЖИЕ ИНГРЕДИЕНТЫ · БОЛЬШОЙ ВКУС · ANVARS
+        <span>✦</span>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">A</span>
+                <span class="logo-text">
+                    ANVARS
+                    <small>FOOD EXPERIENCE</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="#home" class="nav-link active">Главная</a>
+                <a href="#menu" class="nav-link">Меню</a>
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-button" id="favoritesButton" aria-label="Избранное">
+                    ♡
+                    <span class="counter" id="favoritesCount">0</span>
+                </button>
+
+                <button class="cart-button" id="cartButton">
+                    <span>Корзина</span>
+                    <span class="cart-icon">🛒</span>
+                    <span class="counter" id="cartCount">0</span>
+                </button>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                    ☰
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero-background"></div>
+
+            <div class="container hero-content">
+                <div class="hero-copy">
+                    <div class="eyebrow">
+                        <span></span>
+                        ВКУС, КОТОРЫЙ ОБЪЕДИНЯЕТ
+                    </div>
+
+                    <h1>
+                        Больше чем<br>
+                        просто <span>еда.</span>
+                    </h1>
+
+                    <p>
+                        Любимые блюда, свежие продукты и неповторимый вкус.
+                        Создавай свой идеальный заказ вместе с ANVARS.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#menu" class="primary-button">
+                            Смотреть меню <span>↗</span>
+                        </a>
+                        <a href="#about" class="secondary-button">
+                            О нашем ресторане
+                        </a>
+                    </div>
+
+                    <div class="hero-statistics">
+                        <div>
+                            <strong>100%</strong>
+                            <span>Вкус и качество</span>
+                        </div>
+                        <div>
+                            <strong>Fresh</strong>
+                            <span>Свежие продукты</span>
+                        </div>
+                        <div>
+                            <strong>ANVARS</strong>
+                            <span>Твой выбор</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-frame">
+                        <img
+                            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1000"
+                            alt="Аппетитный бургер"
+                        >
+                    </div>
+                    <div class="hero-floating-card">
+                        <span>✦</span>
+                        <div>
+                            <strong>Made with love</strong>
+                            <small>Каждый день для тебя</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-bottom-label">GOOD FOOD. GOOD MOOD.</div>
+        </section>
+
+        <!-- BENEFITS -->
+        <section class="benefits">
+            <div class="container benefits-grid">
+                <article class="benefit">
+                    <span class="benefit-icon">🥬</span>
+                    <div>
+                        <h3>Свежие продукты</h3>
+                        <p>Внимание к каждому ингредиенту</p>
+                    </div>
+                </article>
+
+                <article class="benefit">
+                    <span class="benefit-icon">👨‍🍳</span>
+                    <div>
+                        <h3>Готовим с любовью</h3>
+                        <p>Вкус, который запоминается</p>
+                    </div>
+                </article>
+
+                <article class="benefit">
+                    <span class="benefit-icon">🚀</span>
+                    <div>
+                        <h3>Удобный заказ</h3>
+                        <p>Выбирай и оформляй онлайн</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section class="menu-section section" id="menu">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">
+                            <span></span>
+                            НАШЕ МЕНЮ
+                        </div>
+                        <h2>Выбирай свой <span>вкус.</span></h2>
+                        <p>Каждое блюдо — маленькое удовольствие.</p>
+                    </div>
+
+                    <div class="menu-search">
+                        <span>⌕</span>
+                        <input
+                            type="search"
+                            id="searchInput"
+                            placeholder="Найти любимое блюдо..."
+                        >
+                    </div>
+                </div>
+
+                <div class="catalog-toolbar">
+                    <div class="category-filters" id="categoryFilters">
+                        <!-- Категории создаются JavaScript -->
+                    </div>
+
+                    <select id="sortSelect" aria-label="Сортировка товаров">
+                        <option value="default">По умолчанию</option>
+                        <option value="price-asc">Сначала дешевле</option>
+                        <option value="price-desc">Сначала дороже</option>
+                        <option value="name">По названию</option>
+                    </select>
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+                    <!-- Товары создаются JavaScript -->
+                </div>
+
+                <div class="empty-products" id="emptyProducts" hidden>
+                    <span>🍔</span>
+                    <h3>Ничего не найдено</h3>
+                    <p>Попробуй изменить запрос или категорию.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROMO -->
+        <section class="promo-section">
+            <div class="container">
+                <div class="promo-card">
+                    <div class="promo-content">
+                        <div class="eyebrow">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</div>
+                        <h2>Твой вкус.<br><span>Твоя выгода.</span></h2>
+                        <p>Используй специальный промокод при оформлении заказа.</p>
+                        <div class="promo-code-display">
+                            <span>ANVARS99</span>
+                            <button id="copyPromoButton" type="button">Копировать</button>
+                        </div>
+                        <small>Промокод предоставляет скидку 99% в демонстрационной версии сайта.</small>
+                    </div>
+
+                    <div class="promo-decoration">99%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about-section section" id="about">
+            <div class="container about-grid">
+                <div class="about-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1000"
+                        alt="Приготовление вкусной еды"
+                    >
+                    <div class="about-image-label">
+                        <strong>ANVARS</strong>
+                        <span>FOOD EXPERIENCE</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <div class="eyebrow">
+                        <span></span>
+                        НАША ФИЛОСОФИЯ
+                    </div>
+
+                    <h2>Мы создаём<br>не просто <span>блюда.</span></h2>
+
+                    <p>
+                        ANVARS — место, где каждый может найти свой любимый вкус.
+                        Мы хотим, чтобы заказ был простым, удобным и приятным.
+                    </p>
+
+                    <p>
+                        Выбирай ингредиенты, добавляй любимые продукты и
+                        создавай блюдо, которое подходит именно тебе.
+                    </p>
+
+                    <a href="#menu" class="primary-button">
+                        Выбрать блюдо <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTS -->
+        <section class="contacts-section section" id="contacts">
+            <div class="container">
+                <div class="section-heading centered">
+                    <div class="eyebrow">
+                        <span></span>
+                        МЫ НА СВЯЗИ
+                    </div>
+                    <h2>Свяжись с <span>ANVARS.</span></h2>
+                    <p>Будем рады ответить на твои вопросы.</p>
+                </div>
+
+                <div class="contacts-grid">
+                    <article class="contact-card">
+                        <span>📍</span>
+                        <h3>Адрес</h3>
+                        <p>Уточняется</p>
+                    </article>
+
+                    <article class="contact-card">
+                        <span>📞</span>
+                        <h3>Телефон</h3>
+                        <p>Добавьте номер ресторана</p>
+                    </article>
+
+                    <article class="contact-card">
+                        <span>🕒</span>
+                        <h3>Время работы</h3>
+                        <p>Уточняется</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-icon">A</span>
+                <span class="logo-text">
+                    ANVARS
+                    <small>FOOD EXPERIENCE</small>
+                </span>
+            </a>
+
+            <p>© <span id="currentYear"></span> ANVARS. Все права защищены.</p>
+
+            <a href="#home" class="footer-top">Наверх ↑</a>
+        </div>
+    </footer>
+
+    <!-- MODAL ROOT -->
+    <div id="modalRoot"></div>
+
+    <!-- TOAST NOTIFICATIONS -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top" aria-label="Наверх">
+        ↑
+    </button>
+
+</body>
+</html>
